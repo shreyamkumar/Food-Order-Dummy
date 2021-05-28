@@ -1,0 +1,50 @@
+
+
+body{
+    background-image: url(../Images/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+}
+
+
+.order-tables{
+    margin: 50px auto auto auto;
+    width: 90%;
+}
+
+table{
+    
+    border-collapse: collapse;
+    width: 100%;
+    color: #588c7e;
+    font-size: 1.7rem;
+    text-align: left;
+    text-transform: capitalize;
+
+    th{
+        padding-left: 10px;
+        height: 70px;
+        background-color: #588c7e;
+        color: white;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f4;}
+    td{
+        text-transform: capitalize;
+        padding:12px 0 12px 15px ;
+    }
+
+}
+
+.order-heading{
+    margin-top: 20px;
+    text-align: center;
+    font-size:3em;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: #2A2F32;
+
+
+}

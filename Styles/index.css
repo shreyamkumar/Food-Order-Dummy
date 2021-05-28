@@ -1,0 +1,125 @@
+body {
+  background: white;
+}
+
+.wrapper {
+  background-image: url(https://b.zmtcdn.com/data/images/order/home_page_bg.jpg?output-format=webp);
+  position: relative;
+  background-size: cover;
+  background-position: center top 26%;
+  min-height: 350px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.wrapper .wrapper-heading {
+  padding-left: 50px;
+  color: #dddad5;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.wrapper span {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  padding-left: 3px;
+}
+
+.food-list {
+  background-image: url(../Images/bg.jpg);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto 50px auto;
+}
+
+.food-list .scroller .scroller-heading {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.food-list .food-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.food-list .food-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 5px 10px 5px 10px;
+  background: #f6eeee;
+  width: 850px;
+  box-shadow: 2px 2px 3px #888888;
+  border-radius: 3px;
+}
+
+.food-list .food-data .food-specs {
+  padding-bottom: 5px;
+}
+
+.food-list .food-data .food-desc {
+  line-height: 1.2em;
+}
+
+.food-list .food-data-content {
+  padding: 10px 100px 10px 20px;
+}
+
+.food-list .food-data-content .food-name {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 150%;
+  color: #1c1c1c;
+}
+
+.food-list .food-data-content .food-cost {
+  font-size: 1.4rem;
+  color: #1c1c1c;
+}
+
+.food-list .food-data-content .food-desc {
+  font-size: 18px;
+}
+
+.food-list .food-data-content .food-people {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.food-list .food-btn {
+  padding-right: 10px;
+}
+
+.food-list .btn-glow {
+  transition: all .2s ease;
+}
+
+.food-list .btn-glow:hover {
+  box-shadow: 2px 2px 10px #242323;
+}
+
+.food-list button {
+  border: 0;
+  outline: none;
+  padding: 13px;
+  text-transform: uppercase;
+  background: #f27227;
+  color: white;
+  font-size: 0.85em;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=index.css.map */

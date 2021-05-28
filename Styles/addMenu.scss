@@ -1,0 +1,113 @@
+$body-bg: #e7e7de;
+$form-bg: #e4e9ee;
+$white: #ffffff;
+
+$main: #008891;
+$main-light: lighten($main, 5%);
+$main-dark: darken($main, 5%);
+
+$button: #DBC954;
+$button-light: lighten($button, 10%);
+
+$gray-light: #a0b3b0;
+$gray: #ddd;
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+
+
+
+.form-title{
+    font-size: 1.7em;
+    font-weight: $bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-size: 1.2em;
+    background: rgba($form-bg, 0.9);
+    margin: auto;
+    padding: 40px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: $br;
+    box-shadow: 6px 3px 6px 3px rgba(rgb(80, 75, 75), 0.3);
+    
+    .menu-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+
+
+    .menu,
+    textarea {
+    font-size: 1.2em;
+    
+    width: 60%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    &:focus {
+        outline: 0;
+        border-color: $button;
+        }
+    }
+    textarea {
+        border: 2px solid $gray-light;
+        resize: vertical;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+        margin: 0;
+        }   
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+        }
+
+    .menu-button {
+        border: 0;
+        box-shadow: 6px 3px 6px 3px rgba(rgb(218, 218, 218), 0.3);
+        outline: none;
+        
+        border-radius: 5px;
+        padding: 10px 0;
+        margin: 10px auto 2px auto;
+        font-size: 1.4rem;
+        font-weight: $normal;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        background: $button;
+        color: black;
+        transition: all.5s ease;
+        background: $button;
+        transition: all .5s ease-out;
+        -webkit-appearance: none;
+        &:hover,
+        &:focus {
+            background: $button-light;
+        }
+        }
+        
+        .menu-button-block {
+        display: block;
+        width: 30%;
+        }
+
+}

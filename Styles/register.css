@@ -1,0 +1,266 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  background-image: url(../Images/bg.jpg);
+  background-size: cover;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.nav-list {
+  position: sticky;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0620f;
+  width: 100%;
+  box-shadow: 0 5px 0 5px rgba(218, 216, 216, 0.3);
+}
+
+.nav-list .logo {
+  font-size: 40px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.nav-list .logo a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list ul {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nav-list li {
+  font-size: 1.3em;
+  list-style: none;
+  display: inline;
+  padding: 0.7em;
+}
+
+.nav-list li a {
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.nav-list li a:hover {
+  color: #007078;
+}
+
+.form {
+  background: rgba(228, 233, 238, 0.9);
+  margin: auto;
+  padding: 40px;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 6px 3px 6px 3px rgba(80, 75, 75, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.tab-group li a:hover {
+  background: #007078;
+  color: #ffffff;
+}
+
+.tab-group .active a {
+  background: #008891;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+.error {
+  padding-top: 5px;
+  text-align: center;
+  color: red;
+  font-weight: 600;
+}
+
+.no_error {
+  padding-top: 5px;
+  text-align: center;
+  color: green;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+label.active {
+  display: none;
+  transition: display 0.5s ease;
+}
+
+label.highlight {
+  color: black;
+}
+
+.preference-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.preference-head .preference-label {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.preference-head .preference {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.3em;
+}
+
+.preference-head .preference input {
+  margin-left: 0.5em;
+}
+
+.preference-head .preference label {
+  padding-left: 0.3em;
+  font-weight: 300;
+}
+
+.account-exist {
+  font-size: 1.1em;
+  font-weight: 300;
+  padding-top: .5em;
+  text-align: center;
+}
+
+.info,
+textarea {
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.info:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #f0620f;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.top-row div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.top-row div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 10px 0;
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #f0620f;
+  color: black;
+  transition: all 0.5s ease;
+  background: linear-gradient(to right, #00a0ab 50%, #f0620f 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  -webkit-appearance: none;
+}
+
+.button:hover, .button:focus {
+  background-position: left bottom;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.footer {
+  bottom: 0;
+  background-color: #b6b6b6;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  width: 100%;
+}
+/*# sourceMappingURL=register.css.map */
